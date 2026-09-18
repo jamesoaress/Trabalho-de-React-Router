@@ -14,12 +14,14 @@ export default function AppRoutes() {
   return (
     <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/servicos" element={<Servicos />} />
-        <Route path="/quem-somos" element={<QuemSomos />} />
-        <Route path="/contato" element={<Contato />} />
-      </Routes>
+      <div className="app-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/servicos" element={<Servicos />} />
+          <Route path="/quem-somos" element={<QuemSomos />} />
+          <Route path="/contato" element={<Contato />} />
+        </Routes>
+      </div>
       <Footer />
     </BrowserRouter>
   );
